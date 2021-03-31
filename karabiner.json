@@ -353,26 +353,42 @@
                         ]
                     },
                     {
-                        "description": "[CapsLock Compensation] Right Option (if alone) ---> CapsLock",
+                        "description": "[CapsLock Compensation] Left Shift + Right Shift ---> CapsLock",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "right_option",
+                                    "key_code": "right_shift",
                                     "modifiers": {
+                                        "mandatory": [
+                                            "left_shift"
+                                        ],
                                         "optional": [
-                                            "any"
+                                            "caps_lock"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_option",
-                                        "lazy": true
+                                        "key_code": "caps_lock",
                                     }
                                 ],
-                                "to_if_alone": [
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "left_shift",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": [
                                     {
-                                        "key_code": "caps_lock"
+                                        "key_code": "caps_lock",
                                     }
                                 ],
                                 "type": "basic"
