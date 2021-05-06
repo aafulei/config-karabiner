@@ -34,7 +34,7 @@ My Karabiner-Elements Configuration
 
 - <kbd>CapsLock</kbd> ⟶ <kbd>Esc</kbd>
 
-- <kbd>Right Option</kbd> ⟶ *(original)* <kbd>CapsLock</kbd>
+- <kbd>Left Shift</kbd> + <kbd>Right Shift</kbd> ⟶ *(original)* <kbd>CapsLock</kbd>
 
 Install
 -------
@@ -42,4 +42,4 @@ Install
 ./do.sh --push
 ```
 
-For Karabiner-Elements 13.3 on macOS 10.15 (Catalina).
+For Karabiner-Elements 13.3+ on macOS 10.15 (Catalina).
